@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B950616CDB41B620079EC07 /* Pods_biteableapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBCBBDC9CEADEFC05A3B0C9 /* Pods_biteableapp.framework */; };
+		8A1A8AC31EDEE6080035E292 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A8AC21EDEE6080035E292 /* Settings.swift */; };
+		8A1A8AC51EDEE6C50035E292 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A8AC41EDEE6C50035E292 /* Items.swift */; };
+		8A1A8AC71EDEE74D0035E292 /* ItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A8AC61EDEE74D0035E292 /* ItemService.swift */; };
 		8A9908341ED8451A000A93EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9908331ED8451A000A93EA /* AppDelegate.swift */; };
 		8A9908361ED8451A000A93EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9908351ED8451A000A93EA /* ViewController.swift */; };
-		8A9908391ED8451A000A93EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A9908371ED8451A000A93EA /* Main.storyboard */; };
 		8A99083B1ED8451A000A93EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A99083A1ED8451A000A93EA /* Assets.xcassets */; };
 		8A99083E1ED8451A000A93EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A99083C1ED8451A000A93EA /* LaunchScreen.storyboard */; };
+		8A9908491ED8457C000A93EA /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9908451ED8457C000A93EA /* QRScannerController.swift */; };
+		8A99084E1ED84588000A93EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A99084D1ED84588000A93EA /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A0639166B8025F0A2A297AC /* Pods-biteableapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-biteableapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-biteableapp/Pods-biteableapp.release.xcconfig"; sourceTree = "<group>"; };
+		8A1A8AC21EDEE6080035E292 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		8A1A8AC41EDEE6C50035E292 /* Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		8A1A8AC61EDEE74D0035E292 /* ItemService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemService.swift; sourceTree = "<group>"; };
 		8A9908301ED8451A000A93EA /* biteableapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = biteableapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A9908331ED8451A000A93EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A9908351ED8451A000A93EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8A9908381ED8451A000A93EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A99083A1ED8451A000A93EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A99083D1ED8451A000A93EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A99083F1ED8451A000A93EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A9908451ED8457C000A93EA /* QRScannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
+		8A99084D1ED84588000A93EA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		96C22586F13B61BA680272C3 /* Pods-biteableapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-biteableapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-biteableapp/Pods-biteableapp.debug.xcconfig"; sourceTree = "<group>"; };
+		EEBCBBDC9CEADEFC05A3B0C9 /* Pods_biteableapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_biteableapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B950616CDB41B620079EC07 /* Pods_biteableapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22C3C7BB90B6366447A4B222 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96C22586F13B61BA680272C3 /* Pods-biteableapp.debug.xcconfig */,
+				2A0639166B8025F0A2A297AC /* Pods-biteableapp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		292C20E66A101EEEF80AA45A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEBCBBDC9CEADEFC05A3B0C9 /* Pods_biteableapp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A9908271ED8451A000A93EA = {
 			isa = PBXGroup;
 			children = (
 				8A9908321ED8451A000A93EA /* biteableapp */,
 				8A9908311ED8451A000A93EA /* Products */,
+				22C3C7BB90B6366447A4B222 /* Pods */,
+				292C20E66A101EEEF80AA45A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,10 +87,14 @@
 			isa = PBXGroup;
 			children = (
 				8A9908331ED8451A000A93EA /* AppDelegate.swift */,
-				8A9908351ED8451A000A93EA /* ViewController.swift */,
-				8A9908371ED8451A000A93EA /* Main.storyboard */,
+				8A99084D1ED84588000A93EA /* Main.storyboard */,
 				8A99083A1ED8451A000A93EA /* Assets.xcassets */,
+				8A9908351ED8451A000A93EA /* ViewController.swift */,
+				8A9908451ED8457C000A93EA /* QRScannerController.swift */,
+				8A1A8AC21EDEE6080035E292 /* Settings.swift */,
 				8A99083C1ED8451A000A93EA /* LaunchScreen.storyboard */,
+				8A1A8AC41EDEE6C50035E292 /* Items.swift */,
+				8A1A8AC61EDEE74D0035E292 /* ItemService.swift */,
 				8A99083F1ED8451A000A93EA /* Info.plist */,
 			);
 			path = biteableapp;
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A9908421ED8451A000A93EA /* Build configuration list for PBXNativeTarget "biteableapp" */;
 			buildPhases = (
+				E401A3556F4EC89931FB4CE2 /* [CP] Check Pods Manifest.lock */,
 				8A99082C1ED8451A000A93EA /* Sources */,
 				8A99082D1ED8451A000A93EA /* Frameworks */,
 				8A99082E1ED8451A000A93EA /* Resources */,
+				1C4375D2DEEAAA04A460857D /* [CP] Embed Pods Frameworks */,
+				F66272835C29F26E9FA770D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,33 +165,77 @@
 			files = (
 				8A99083E1ED8451A000A93EA /* LaunchScreen.storyboard in Resources */,
 				8A99083B1ED8451A000A93EA /* Assets.xcassets in Resources */,
-				8A9908391ED8451A000A93EA /* Main.storyboard in Resources */,
+				8A99084E1ED84588000A93EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C4375D2DEEAAA04A460857D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-biteableapp/Pods-biteableapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E401A3556F4EC89931FB4CE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F66272835C29F26E9FA770D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-biteableapp/Pods-biteableapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A99082C1ED8451A000A93EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A1A8AC71EDEE74D0035E292 /* ItemService.swift in Sources */,
 				8A9908361ED8451A000A93EA /* ViewController.swift in Sources */,
+				8A1A8AC51EDEE6C50035E292 /* Items.swift in Sources */,
 				8A9908341ED8451A000A93EA /* AppDelegate.swift in Sources */,
+				8A9908491ED8457C000A93EA /* QRScannerController.swift in Sources */,
+				8A1A8AC31EDEE6080035E292 /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8A9908371ED8451A000A93EA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8A9908381ED8451A000A93EA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8A99083C1ED8451A000A93EA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -257,6 +340,7 @@
 		};
 		8A9908431ED8451A000A93EA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96C22586F13B61BA680272C3 /* Pods-biteableapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PB5S47GH58;
@@ -270,6 +354,7 @@
 		};
 		8A9908441ED8451A000A93EA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A0639166B8025F0A2A297AC /* Pods-biteableapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PB5S47GH58;
@@ -300,6 +385,7 @@
 				8A9908441ED8451A000A93EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
