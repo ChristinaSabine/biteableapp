@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "biteableapp/Settings.swift"
-            timestampString = "517490931.413152"
+            timestampString = "517932545.489676"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "Settings"
             landmarkType = "3">
          </BreakpointContent>
@@ -26,45 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "biteableapp/Items.swift"
-            timestampString = "517924566.318471"
+            timestampString = "518532393.813201"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "items"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "biteableapp/ItemService.swift"
-            timestampString = "517926604.220671"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
-            landmarkName = "request(url:callback:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "biteableapp/ItemService.swift"
-            timestampString = "517932022.156075"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "getItems(callback:)"
-            landmarkType = "7">
+            startingLineNumber = "31"
+            endingLineNumber = "31">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

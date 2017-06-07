@@ -13,6 +13,8 @@ class QRScannerController: UIViewController {
     @IBOutlet var messageLabel:UILabel!
     @IBOutlet var topbar: UIView!
     
+    var hasScanned = false
+    
     var captureSession:AVCaptureSession?
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
     var qrCodeFrameView:UIView?
@@ -83,6 +85,9 @@ class QRScannerController: UIViewController {
             return
         }
     }
+    @IBAction func back(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 
 }
 
@@ -107,8 +112,12 @@ extension QRScannerController: AVCaptureMetadataOutputObjectsDelegate {
             
             if metadataObj.stringValue != nil {
                 messageLabel.text = metadataObj.stringValue
-                delegate?.didScan(code: metadataObj.stringValue)
-                dismiss(animated: true, completion: nil)
+                
+                if !hasScanned {
+                    hasScanned = true
+                    delegate?.didScan(code: metadataObj.stringValue)
+                    dismiss(animated: true, completion: nil)
+                }
             }
         }
     }
