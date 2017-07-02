@@ -12,14 +12,14 @@ import SwiftyJSON
 class Item {
     let id: Int
     let name: String
-//    let barcode: String
-//    let vegetarian:String
-//    
+    let barcode: String
+    let vegetarian:String
+    
     init(json: JSON) {
         self.id = json["id"].intValue
         self.name = json["name"].stringValue
-//        self.barcode = barcode
-//        self.vegetarian = vegetarian
+        self.barcode = json["barcode"].stringValue
+        self.vegetarian = json["vegtarian"].stringValue
     }
     
 }

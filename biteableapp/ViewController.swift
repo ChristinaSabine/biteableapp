@@ -15,10 +15,7 @@ class QRCodeViewController: UIViewController {
     @IBOutlet weak var codeLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
-    
     
     @IBAction func showScanner(_ sender: UIButton) {
         performSegue(withIdentifier: "Scanner", sender: self)
@@ -30,7 +27,6 @@ class QRCodeViewController: UIViewController {
             destinationVC.delegate = self
         }
     }
-    
     
     func checkData(jsonData: JSON) {
         
@@ -44,8 +40,6 @@ class QRCodeViewController: UIViewController {
         print(item.name)
         
     }
-    
-    
     
     func lookUpCode(_ code: String) {
     
@@ -61,11 +55,8 @@ class QRCodeViewController: UIViewController {
             self.checkData(jsonData: json)
             
         }
-    
     }
-    
 }
-
 
 extension QRCodeViewController: QRScannerControllerDelegate {
     
@@ -73,7 +64,5 @@ extension QRCodeViewController: QRScannerControllerDelegate {
         codeLabel.text = code
         
         lookUpCode(code)
-        
     }
-    
 }

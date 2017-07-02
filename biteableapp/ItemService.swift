@@ -20,6 +20,8 @@ class ItemService {
         request(url: settings.viewItems, callback: callback)
     }
     
+    
+    
     func request(url:String, callback:(NSDictionary) -> ()) {
         
     }
