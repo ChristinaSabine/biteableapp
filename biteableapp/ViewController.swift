@@ -49,11 +49,8 @@ class QRCodeViewController: UIViewController {
                 //something went wrong, there was no data...
                 return
             }
-            
             let json = JSON(data: data)
-            
             self.checkData(jsonData: json)
-            
         }
     }
 }
