@@ -9,11 +9,15 @@
 import Foundation
 import SwiftyJSON
 
-class Item {
+class Item: CustomStringConvertible {
     let id: Int
     let name: String
     let barcode: String
     let vegetarian:String
+    
+    var description: String {
+        return "Item: \(name), \(barcode)"
+    }
     
     init(json: JSON) {
         self.id = json["id"].intValue

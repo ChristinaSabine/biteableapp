@@ -9,33 +9,33 @@
 /* Begin PBXBuildFile section */
 		5B950616CDB41B620079EC07 /* Pods_biteableapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEBCBBDC9CEADEFC05A3B0C9 /* Pods_biteableapp.framework */; };
 		8A1A8AC31EDEE6080035E292 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A8AC21EDEE6080035E292 /* Settings.swift */; };
-		8A1A8AC91EDF08A80035E292 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A8AC81EDF08A80035E292 /* ResultsViewController.swift */; };
 		8A1A8ACE1EE039EE0035E292 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A8ACC1EE039EE0035E292 /* Item.swift */; };
 		8A1A8ACF1EE039EE0035E292 /* ItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1A8ACD1EE039EE0035E292 /* ItemService.swift */; };
 		8A9908341ED8451A000A93EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9908331ED8451A000A93EA /* AppDelegate.swift */; };
-		8A9908361ED8451A000A93EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9908351ED8451A000A93EA /* ViewController.swift */; };
+		8A9908361ED8451A000A93EA /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9908351ED8451A000A93EA /* QRCodeViewController.swift */; };
 		8A99083B1ED8451A000A93EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A99083A1ED8451A000A93EA /* Assets.xcassets */; };
 		8A99083E1ED8451A000A93EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A99083C1ED8451A000A93EA /* LaunchScreen.storyboard */; };
 		8A9908491ED8457C000A93EA /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9908451ED8457C000A93EA /* QRScannerController.swift */; };
 		8A99084E1ED84588000A93EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A99084D1ED84588000A93EA /* Main.storyboard */; };
-		8AA5097B1F0922D700BDC096 /* searchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA5097A1F0922D700BDC096 /* searchController.swift */; };
+		8AA5097B1F0922D700BDC096 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA5097A1F0922D700BDC096 /* SearchController.swift */; };
+		8AA5097D1F0BE90900BDC096 /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA5097C1F0BE90900BDC096 /* DisplayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A0639166B8025F0A2A297AC /* Pods-biteableapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-biteableapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-biteableapp/Pods-biteableapp.release.xcconfig"; sourceTree = "<group>"; };
 		8A1A8AC21EDEE6080035E292 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		8A1A8AC81EDF08A80035E292 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		8A1A8ACC1EE039EE0035E292 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		8A1A8ACD1EE039EE0035E292 /* ItemService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemService.swift; sourceTree = "<group>"; };
 		8A9908301ED8451A000A93EA /* biteableapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = biteableapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A9908331ED8451A000A93EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A9908351ED8451A000A93EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8A9908351ED8451A000A93EA /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		8A99083A1ED8451A000A93EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A99083D1ED8451A000A93EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A99083F1ED8451A000A93EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A9908451ED8457C000A93EA /* QRScannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
 		8A99084D1ED84588000A93EA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		8AA5097A1F0922D700BDC096 /* searchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchController.swift; sourceTree = "<group>"; };
+		8AA5097A1F0922D700BDC096 /* SearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		8AA5097C1F0BE90900BDC096 /* DisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
 		96C22586F13B61BA680272C3 /* Pods-biteableapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-biteableapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-biteableapp/Pods-biteableapp.debug.xcconfig"; sourceTree = "<group>"; };
 		EEBCBBDC9CEADEFC05A3B0C9 /* Pods_biteableapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_biteableapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -92,10 +92,10 @@
 			children = (
 				8A9908331ED8451A000A93EA /* AppDelegate.swift */,
 				8A99084D1ED84588000A93EA /* Main.storyboard */,
+				8AA5097C1F0BE90900BDC096 /* DisplayViewController.swift */,
 				8A99083A1ED8451A000A93EA /* Assets.xcassets */,
-				8A9908351ED8451A000A93EA /* ViewController.swift */,
-				8AA5097A1F0922D700BDC096 /* searchController.swift */,
-				8A1A8AC81EDF08A80035E292 /* ResultsViewController.swift */,
+				8A9908351ED8451A000A93EA /* QRCodeViewController.swift */,
+				8AA5097A1F0922D700BDC096 /* SearchController.swift */,
 				8A1A8ACC1EE039EE0035E292 /* Item.swift */,
 				8A1A8ACD1EE039EE0035E292 /* ItemService.swift */,
 				8A9908451ED8457C000A93EA /* QRScannerController.swift */,
@@ -230,13 +230,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A9908361ED8451A000A93EA /* ViewController.swift in Sources */,
+				8A9908361ED8451A000A93EA /* QRCodeViewController.swift in Sources */,
 				8A9908341ED8451A000A93EA /* AppDelegate.swift in Sources */,
 				8A9908491ED8457C000A93EA /* QRScannerController.swift in Sources */,
-				8AA5097B1F0922D700BDC096 /* searchController.swift in Sources */,
-				8A1A8AC91EDF08A80035E292 /* ResultsViewController.swift in Sources */,
+				8AA5097B1F0922D700BDC096 /* SearchController.swift in Sources */,
 				8A1A8ACF1EE039EE0035E292 /* ItemService.swift in Sources */,
 				8A1A8ACE1EE039EE0035E292 /* Item.swift in Sources */,
+				8AA5097D1F0BE90900BDC096 /* DisplayViewController.swift in Sources */,
 				8A1A8AC31EDEE6080035E292 /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

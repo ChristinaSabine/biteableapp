@@ -9,11 +9,12 @@
 import Foundation
 
 import UIKit
-class ViewController: UIViewController, UISearchBarDelegate {
+class SearchController: UIViewController, UISearchBarDelegate {
     
     var searchController = UISearchController()
     
     override func viewDidLoad() {
+
         //Setup search bar
         searchController = UISearchController(searchResultsController: nil)
         searchController.dimsBackgroundDuringPresentation = false
@@ -23,9 +24,14 @@ class ViewController: UIViewController, UISearchBarDelegate {
         //Add to top of table view
        // tableView.tableHeaderView = searchController.searchBar
     }
+    
+    @IBAction func closeButton(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
 
-extension ViewController: UISearchResultsUpdating {
+extension SearchController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         print(searchController.searchBar.text!)
     }

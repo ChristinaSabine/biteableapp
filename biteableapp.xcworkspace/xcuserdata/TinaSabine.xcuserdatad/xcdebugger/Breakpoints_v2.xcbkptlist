@@ -31,5 +31,53 @@
             endingLineNumber = "31">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "biteableapp/QRCodeViewController.swift"
+            timestampString = "520876852.37541"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "lookUpCode(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "biteableapp.QRCodeViewController.lookUpCode (Swift.String) -&gt; ()"
+                  moduleName = "biteableapp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/TinaSabine/Desktop/biteableapp/biteableapp/QRCodeViewController.swift"
+                  timestampString = "520876754.212518"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "biteableapp.QRCodeViewController.(lookUpCode (Swift.String) -&gt; ()).(closure #1)"
+                  moduleName = "biteableapp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/TinaSabine/Desktop/biteableapp/biteableapp/QRCodeViewController.swift"
+                  timestampString = "520876754.214573"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

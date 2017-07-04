@@ -26,20 +26,26 @@ class QRCodeViewController: UIViewController {
             let destinationVC = segue.destination as! QRScannerController
             destinationVC.delegate = self
         }
+        
+        if segue.identifier == "Display" {
+            let displayViewController = segue.destination as! DisplayViewController
+            displayViewController.item = item!
+        }
     }
     
     func checkData(jsonData: JSON) {
         
-        guard let _ = jsonData["id"].int else {
+        guard let _ = jsonData["item"]["id"].int else {
             //item not in database
             print("not in databse")
             return
         }
         
-        let item = Item(json: jsonData)
-        print(item.name)
+        let item = Item(json: jsonData["item"])
+        //performSegue(withIdentifier: "Display", sender: item)
         
     }
+
     
     func lookUpCode(_ code: String) {
     
