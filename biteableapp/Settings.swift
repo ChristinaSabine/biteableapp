@@ -6,7 +6,7 @@
 //  Copyright © 2017 Tina Sabine. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class Settings {
     var viewItems = "http://46.101.41.155/items.json"

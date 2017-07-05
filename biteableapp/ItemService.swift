@@ -6,8 +6,7 @@
 //  Copyright © 2017 Tina Sabine. All rights reserved.
 //
 
-import Foundation
-
+import UIKit
 class ItemService {
     
     var settings:Settings!
@@ -15,14 +14,10 @@ class ItemService {
     init() {
         self.settings = Settings()
     }
-    
     func getItems(callback:(NSDictionary) -> ()) {
         request(url: settings.viewItems, callback: callback)
     }
     
-    
-    
     func request(url:String, callback:(NSDictionary) -> ()) {
-        
     }
 }

@@ -14,7 +14,6 @@ class Item: CustomStringConvertible {
     let name: String
     let barcode: String
     let vegetarian:String
-    
     var description: String {
         return "Item: \(name), \(barcode)"
     }
@@ -25,5 +24,4 @@ class Item: CustomStringConvertible {
         self.barcode = json["barcode"].stringValue
         self.vegetarian = json["vegtarian"].stringValue
     }
-    
 }

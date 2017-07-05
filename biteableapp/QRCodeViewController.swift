@@ -5,7 +5,6 @@
 //  Created by Tina Sabine on 26/05/2017.
 //  Copyright © 2017 Tina Sabine. All rights reserved.
 //
-
 import UIKit
 import Alamofire
 import SwiftyJSON
@@ -20,7 +19,6 @@ class QRCodeViewController: UIViewController {
     @IBAction func showScanner(_ sender: UIButton) {
         performSegue(withIdentifier: "Scanner", sender: self)
     }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "Scanner" {
             let destinationVC = segue.destination as! QRScannerController
@@ -29,7 +27,7 @@ class QRCodeViewController: UIViewController {
         
         if segue.identifier == "Display" {
             let displayViewController = segue.destination as! DisplayViewController
-            displayViewController.item = item!
+          //displayViewController.item = item!
         }
     }
     
@@ -43,10 +41,8 @@ class QRCodeViewController: UIViewController {
         
         let item = Item(json: jsonData["item"])
         //performSegue(withIdentifier: "Display", sender: item)
-        
     }
 
-    
     func lookUpCode(_ code: String) {
     
         Alamofire.request("http://46.101.41.155/items/view/\(code).json").response { response in
@@ -60,7 +56,6 @@ class QRCodeViewController: UIViewController {
         }
     }
 }
-
 extension QRCodeViewController: QRScannerControllerDelegate {
     
     func didScan(code: String) {

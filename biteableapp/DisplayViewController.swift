@@ -12,11 +12,10 @@ import UIKit
 class DisplayViewController: UIViewController {
 
     var item: Item!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         print(item)
     }
-    
 }

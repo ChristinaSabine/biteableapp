@@ -1,12 +1,9 @@
-
 import UIKit
 import AVFoundation
-
 
 protocol QRScannerControllerDelegate {
     func didScan(code: String)
 }
-
 
 class QRScannerController: UIViewController {
 
@@ -14,11 +11,9 @@ class QRScannerController: UIViewController {
     @IBOutlet var topbar: UIView!
     
     var hasScanned = false
-    
     var captureSession:AVCaptureSession?
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
     var qrCodeFrameView:UIView?
-    
     var delegate: QRScannerControllerDelegate?
     
     let supportedCodeTypes = [AVMetadataObjectTypeUPCECode,
@@ -34,24 +29,19 @@ class QRScannerController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Get an instance of the AVCaptureDevice class to initialize a device object and provide the video as the media type parameter.
         let captureDevice = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
-        
+    
         do {
             // Get an instance of the AVCaptureDeviceInput class using the previous device object.
             let input = try AVCaptureDeviceInput(device: captureDevice)
-            
             // Initialize the captureSession object.
             captureSession = AVCaptureSession()
-            
             // Set the input device on the capture session.
             captureSession?.addInput(input)
-            
             // Initialize a AVCaptureMetadataOutput object and set it as the output device to the capture session.
             let captureMetadataOutput = AVCaptureMetadataOutput()
             captureSession?.addOutput(captureMetadataOutput)
-            
             // Set delegate and use the default dispatch queue to execute the call back
             captureMetadataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
             captureMetadataOutput.metadataObjectTypes = supportedCodeTypes
@@ -78,7 +68,6 @@ class QRScannerController: UIViewController {
                 view.addSubview(qrCodeFrameView)
                 view.bringSubview(toFront: qrCodeFrameView)
             }
-            
         } catch {
             // If any error occurs, simply print it out and don't continue any more.
             print(error)
@@ -88,9 +77,7 @@ class QRScannerController: UIViewController {
     @IBAction func back(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-
 }
-
 extension QRScannerController: AVCaptureMetadataOutputObjectsDelegate {
     
     func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
@@ -101,7 +88,6 @@ extension QRScannerController: AVCaptureMetadataOutputObjectsDelegate {
             messageLabel.text = "No barcode is detected"
             return
         }
-        
         // Get the metadata object.
         let metadataObj = metadataObjects[0] as! AVMetadataMachineReadableCodeObject
         
@@ -121,9 +107,7 @@ extension QRScannerController: AVCaptureMetadataOutputObjectsDelegate {
             }
         }
     }
-    
 }
-
 
 
 

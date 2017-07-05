@@ -92,15 +92,15 @@
 			children = (
 				8A9908331ED8451A000A93EA /* AppDelegate.swift */,
 				8A99084D1ED84588000A93EA /* Main.storyboard */,
-				8AA5097C1F0BE90900BDC096 /* DisplayViewController.swift */,
-				8A99083A1ED8451A000A93EA /* Assets.xcassets */,
 				8A9908351ED8451A000A93EA /* QRCodeViewController.swift */,
+				8A9908451ED8457C000A93EA /* QRScannerController.swift */,
+				8AA5097C1F0BE90900BDC096 /* DisplayViewController.swift */,
 				8AA5097A1F0922D700BDC096 /* SearchController.swift */,
 				8A1A8ACC1EE039EE0035E292 /* Item.swift */,
 				8A1A8ACD1EE039EE0035E292 /* ItemService.swift */,
-				8A9908451ED8457C000A93EA /* QRScannerController.swift */,
 				8A1A8AC21EDEE6080035E292 /* Settings.swift */,
 				8A99083C1ED8451A000A93EA /* LaunchScreen.storyboard */,
+				8A99083A1ED8451A000A93EA /* Assets.xcassets */,
 				8A99083F1ED8451A000A93EA /* Info.plist */,
 			);
 			path = biteableapp;
