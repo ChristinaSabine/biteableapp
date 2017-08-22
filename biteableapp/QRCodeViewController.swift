@@ -11,7 +11,11 @@ import SwiftyJSON
 
 class QRCodeViewController: UIViewController {
     
+    var item: Item!
+    
+    @IBOutlet weak var showButton: UIButton!
     @IBOutlet weak var codeLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -19,6 +23,8 @@ class QRCodeViewController: UIViewController {
     @IBAction func showScanner(_ sender: UIButton) {
         performSegue(withIdentifier: "Scanner", sender: self)
     }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "Scanner" {
             let destinationVC = segue.destination as! QRScannerController
@@ -27,7 +33,7 @@ class QRCodeViewController: UIViewController {
         
         if segue.identifier == "Display" {
             let displayViewController = segue.destination as! DisplayViewController
-          //displayViewController.item = item!
+            displayViewController.item = item
         }
     }
     
@@ -35,12 +41,15 @@ class QRCodeViewController: UIViewController {
         
         guard let _ = jsonData["item"]["id"].int else {
             //item not in database
-            print("not in databse")
+            print("not in database")
             return
         }
         
-        let item = Item(json: jsonData["item"])
-        //performSegue(withIdentifier: "Display", sender: item)
+        item = Item(json: jsonData["item"])
+        
+        showButton.isEnabled = true
+        showButton.isHidden = false
+        
     }
 
     func lookUpCode(_ code: String) {
@@ -51,16 +60,19 @@ class QRCodeViewController: UIViewController {
                 //something went wrong, there was no data...
                 return
             }
+            
             let json = JSON(data: data)
             self.checkData(jsonData: json)
         }
     }
 }
+
+
 extension QRCodeViewController: QRScannerControllerDelegate {
     
     func didScan(code: String) {
         codeLabel.text = code
-        
         lookUpCode(code)
     }
 }
+

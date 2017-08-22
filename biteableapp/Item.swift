@@ -15,13 +15,17 @@ class Item: CustomStringConvertible {
     let barcode: String
     let vegetarian:String
     var description: String {
-        return "Item: \(name), \(barcode)"
+        return "Item: \(name), \(barcode), \(vegetarian)"
+    }
+    
+    var imageURL: String {
+        return "http://46.101.41.155/img/\(barcode).jpg"
     }
     
     init(json: JSON) {
         self.id = json["id"].intValue
         self.name = json["name"].stringValue
         self.barcode = json["barcode"].stringValue
-        self.vegetarian = json["vegtarian"].stringValue
+        self.vegetarian = json["vegetarian"].stringValue
     }
 }

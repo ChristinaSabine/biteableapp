@@ -39,6 +39,7 @@ class QRScannerController: UIViewController {
             captureSession = AVCaptureSession()
             // Set the input device on the capture session.
             captureSession?.addInput(input)
+            
             // Initialize a AVCaptureMetadataOutput object and set it as the output device to the capture session.
             let captureMetadataOutput = AVCaptureMetadataOutput()
             captureSession?.addOutput(captureMetadataOutput)
@@ -74,9 +75,16 @@ class QRScannerController: UIViewController {
             return
         }
     }
+    
     @IBAction func back(_ sender: Any) {
+        //DELETE THESE LINE
+        hasScanned = true
+        delegate?.didScan(code: "5000328482835")
+        //HERE
+        
         dismiss(animated: true, completion: nil)
     }
+    
 }
 extension QRScannerController: AVCaptureMetadataOutputObjectsDelegate {
     
@@ -108,7 +116,3 @@ extension QRScannerController: AVCaptureMetadataOutputObjectsDelegate {
         }
     }
 }
-
-
-
-

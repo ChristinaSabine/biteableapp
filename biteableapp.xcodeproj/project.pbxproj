@@ -19,6 +19,7 @@
 		8A99084E1ED84588000A93EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A99084D1ED84588000A93EA /* Main.storyboard */; };
 		8AA5097B1F0922D700BDC096 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA5097A1F0922D700BDC096 /* SearchController.swift */; };
 		8AA5097D1F0BE90900BDC096 /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA5097C1F0BE90900BDC096 /* DisplayViewController.swift */; };
+		8ABEB53A1F4C36290055AA42 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABEB5391F4C36290055AA42 /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		8A99084D1ED84588000A93EA /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8AA5097A1F0922D700BDC096 /* SearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		8AA5097C1F0BE90900BDC096 /* DisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
+		8ABEB5391F4C36290055AA42 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		96C22586F13B61BA680272C3 /* Pods-biteableapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-biteableapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-biteableapp/Pods-biteableapp.debug.xcconfig"; sourceTree = "<group>"; };
 		EEBCBBDC9CEADEFC05A3B0C9 /* Pods_biteableapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_biteableapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -95,6 +97,7 @@
 				8A9908351ED8451A000A93EA /* QRCodeViewController.swift */,
 				8A9908451ED8457C000A93EA /* QRScannerController.swift */,
 				8AA5097C1F0BE90900BDC096 /* DisplayViewController.swift */,
+				8ABEB5391F4C36290055AA42 /* UIImageView+Extension.swift */,
 				8AA5097A1F0922D700BDC096 /* SearchController.swift */,
 				8A1A8ACC1EE039EE0035E292 /* Item.swift */,
 				8A1A8ACD1EE039EE0035E292 /* ItemService.swift */,
@@ -233,6 +236,7 @@
 				8A9908361ED8451A000A93EA /* QRCodeViewController.swift in Sources */,
 				8A9908341ED8451A000A93EA /* AppDelegate.swift in Sources */,
 				8A9908491ED8457C000A93EA /* QRScannerController.swift in Sources */,
+				8ABEB53A1F4C36290055AA42 /* UIImageView+Extension.swift in Sources */,
 				8AA5097B1F0922D700BDC096 /* SearchController.swift in Sources */,
 				8A1A8ACF1EE039EE0035E292 /* ItemService.swift in Sources */,
 				8A1A8ACE1EE039EE0035E292 /* Item.swift in Sources */,

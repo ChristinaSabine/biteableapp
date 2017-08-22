@@ -12,10 +12,16 @@ import UIKit
 class DisplayViewController: UIViewController {
 
     var item: Item!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         print(item)
+        
     }
+    
+    @IBAction func back(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
