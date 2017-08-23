@@ -15,8 +15,14 @@ class DisplayViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let imageUrlString = "http://46.101.41.155/img/5000328482835.png"
+        
+        var _:URL = URL(string: imageUrlString)!
+        
 
         print(item)
+        
         
     }
     
