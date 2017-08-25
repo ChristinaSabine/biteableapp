@@ -174,25 +174,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LDJ-vN-le6">
-                                <rect key="frame" x="67" y="86" width="240" height="128"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mc6-p9-92L">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mc6-p9-92L">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTT-TS-qnF">
-                                <rect key="frame" x="10" y="21" width="26" height="29"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="26" id="l72-1O-wjV"/>
-                                </constraints>
-                                <color key="tintColor" red="0.98132258653640747" green="0.96377099854496384" blue="0.96488432917920963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="cross"/>
-                                <connections>
-                                    <action selector="back:" destination="nbq-nF-vjZ" eventType="touchUpInside" id="7ij-A8-CcK"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" keyboardDismissMode="interactive" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rc1-Wi-G04">
                                 <rect key="frame" x="147" y="17" width="80" height="36"/>
                                 <attributedString key="attributedText">
@@ -206,6 +192,21 @@
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTT-TS-qnF">
+                                <rect key="frame" x="10" y="21" width="26" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="l72-1O-wjV"/>
+                                </constraints>
+                                <color key="tintColor" red="0.98132258653640747" green="0.96377099854496384" blue="0.96488432917920963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="cross"/>
+                                <connections>
+                                    <action selector="back:" destination="nbq-nF-vjZ" eventType="touchUpInside" id="7ij-A8-CcK"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uee-H6-vbY">
+                                <rect key="frame" x="67" y="109" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -218,13 +219,11 @@
                             <constraint firstItem="rc1-Wi-G04" firstAttribute="top" secondItem="e2E-5V-Aqy" secondAttribute="topMargin" constant="17" id="KSc-xK-AVh"/>
                             <constraint firstItem="ARt-NB-wJg" firstAttribute="top" secondItem="YTT-TS-qnF" secondAttribute="bottom" constant="617" id="RcB-p2-3Fk"/>
                             <constraint firstItem="Mc6-p9-92L" firstAttribute="leading" secondItem="e2E-5V-Aqy" secondAttribute="leading" id="Rdd-O5-6bu"/>
-                            <constraint firstItem="LDJ-vN-le6" firstAttribute="top" secondItem="rc1-Wi-G04" secondAttribute="bottom" constant="33" id="SeV-46-TsZ"/>
-                            <constraint firstItem="rc1-Wi-G04" firstAttribute="centerX" secondItem="LDJ-vN-le6" secondAttribute="centerX" id="YwO-pC-THY"/>
-                            <constraint firstItem="ARt-NB-wJg" firstAttribute="top" secondItem="LDJ-vN-le6" secondAttribute="bottom" constant="453" id="gjJ-Rx-Oc2"/>
-                            <constraint firstItem="LDJ-vN-le6" firstAttribute="top" secondItem="Mc6-p9-92L" secondAttribute="bottom" constant="27" id="j6y-rw-cH0"/>
-                            <constraint firstItem="LDJ-vN-le6" firstAttribute="leading" secondItem="e2E-5V-Aqy" secondAttribute="leadingMargin" constant="51" id="mE1-pE-47c"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="Uee-H6-vbY" id="mRn-LH-zCi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GG9-qF-qol" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

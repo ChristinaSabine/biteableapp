@@ -11,18 +11,16 @@ import UIKit
 
 class DisplayViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
     var item: Item!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         
-        let imageUrlString = "http://46.101.41.155/img/5000328482835.png"
+        let imageUrl:String = "http://46.101.41.155/img/5000328482835.png"
         
-        var _:URL = URL(string: imageUrlString)!
+        let _:URL = URL(string: imageUrl)!
         
-
         print(item)
-        
         
     }
     
