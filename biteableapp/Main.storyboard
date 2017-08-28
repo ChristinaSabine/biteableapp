@@ -210,14 +210,14 @@
                                     <constraint firstAttribute="height" constant="201" id="UyB-wR-X8g"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="hnS-81-C9N">
-                                <rect key="frame" x="16" y="314" width="343" height="151"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hnS-81-C9N">
+                                <rect key="frame" x="16" y="276" width="343" height="371"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Items Display">
                                         <attributes>
                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="24" name="Helvetica"/>
+                                            <font key="NSFont" size="36" name="Helvetica"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="clipping" baseWritingDirection="leftToRight" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -230,7 +230,7 @@
                             <constraint firstItem="Uee-H6-vbY" firstAttribute="top" secondItem="YTT-TS-qnF" secondAttribute="bottom" constant="17" id="BD8-wi-GVb"/>
                             <constraint firstItem="Mc6-p9-92L" firstAttribute="centerX" secondItem="rc1-Wi-G04" secondAttribute="centerX" id="BzS-75-csh"/>
                             <constraint firstItem="Uee-H6-vbY" firstAttribute="top" secondItem="Mc6-p9-92L" secondAttribute="bottom" constant="8" symbolic="YES" id="FaP-jZ-1gD"/>
-                            <constraint firstAttribute="bottom" secondItem="hnS-81-C9N" secondAttribute="bottom" constant="202" id="JKd-nf-Zdx"/>
+                            <constraint firstAttribute="bottom" secondItem="hnS-81-C9N" secondAttribute="bottom" constant="20" id="JKd-nf-Zdx"/>
                             <constraint firstItem="YTT-TS-qnF" firstAttribute="top" secondItem="B7t-K6-0Rq" secondAttribute="bottom" constant="1" id="Lwr-vY-BUN"/>
                             <constraint firstItem="Mc6-p9-92L" firstAttribute="leading" secondItem="e2E-5V-Aqy" secondAttribute="leading" id="NPd-eA-h6I"/>
                             <constraint firstItem="rc1-Wi-G04" firstAttribute="centerX" secondItem="Uee-H6-vbY" secondAttribute="centerX" id="XKt-NY-bKO"/>
@@ -242,7 +242,7 @@
                             <constraint firstItem="Uee-H6-vbY" firstAttribute="leading" secondItem="e2E-5V-Aqy" secondAttribute="leadingMargin" id="wl8-4Q-afg"/>
                             <constraint firstItem="YTT-TS-qnF" firstAttribute="centerY" secondItem="rc1-Wi-G04" secondAttribute="centerY" id="x7Z-2n-fTj"/>
                             <constraint firstItem="Uee-H6-vbY" firstAttribute="leading" secondItem="hnS-81-C9N" secondAttribute="leading" id="x7m-as-Zde"/>
-                            <constraint firstItem="hnS-81-C9N" firstAttribute="top" secondItem="Uee-H6-vbY" secondAttribute="bottom" constant="46" id="yfO-o4-aAg"/>
+                            <constraint firstItem="hnS-81-C9N" firstAttribute="top" secondItem="Uee-H6-vbY" secondAttribute="bottom" constant="8" id="yfO-o4-aAg"/>
                         </constraints>
                     </view>
                     <connections>
