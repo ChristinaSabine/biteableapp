@@ -6,10 +6,15 @@ class DisplayViewController: UIViewController {
     @IBOutlet weak var itemLabel: UILabel!
 
     var item: Item!
+ 
+    var imageURL:UIImageView!
     
     override func viewDidLoad() {
         
         print(item)
+        
+        imageView.image = UIImage(imageURL!)
+        
             itemLabel.text = "\(item)"
     }
     
