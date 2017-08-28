@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  biteableapp
-//
-//  Created by Tina Sabine on 26/05/2017.
-//  Copyright © 2017 Tina Sabine. All rights reserved.
-//
 import UIKit
 
 @UIApplicationMain

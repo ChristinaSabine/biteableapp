@@ -84,8 +84,8 @@ class QRScannerController: UIViewController {
         
         dismiss(animated: true, completion: nil)
     }
-    
 }
+
 extension QRScannerController: AVCaptureMetadataOutputObjectsDelegate {
     
     func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {

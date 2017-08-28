@@ -1,11 +1,3 @@
-//
-//  ItemService.swift
-//  biteableapp
-//
-//  Created by Tina Sabine on 31/05/2017.
-//  Copyright © 2017 Tina Sabine. All rights reserved.
-//
-
 import UIKit
 class ItemService {
     
@@ -17,7 +9,6 @@ class ItemService {
     func getItems(callback:(NSDictionary) -> ()) {
         request(url: settings.viewItems, callback: callback)
     }
-    
     func request(url:String, callback:(NSDictionary) -> ()) {
     }
 }

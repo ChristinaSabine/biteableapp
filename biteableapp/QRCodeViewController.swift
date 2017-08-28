@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  biteableapp
-//
-//  Created by Tina Sabine on 26/05/2017.
-//  Copyright © 2017 Tina Sabine. All rights reserved.
-//
 import UIKit
 import Alamofire
 import SwiftyJSON
@@ -23,7 +16,6 @@ class QRCodeViewController: UIViewController {
     @IBAction func showScanner(_ sender: UIButton) {
         performSegue(withIdentifier: "Scanner", sender: self)
     }
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "Scanner" {
@@ -66,7 +58,6 @@ class QRCodeViewController: UIViewController {
     }
 }
 
-
 extension QRCodeViewController: QRScannerControllerDelegate {
     
     func didScan(code: String) {
@@ -74,4 +65,3 @@ extension QRCodeViewController: QRScannerControllerDelegate {
         lookUpCode(code)
     }
 }
-
