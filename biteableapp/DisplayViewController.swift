@@ -19,6 +19,7 @@ class DisplayViewController: UIViewController {
     override func viewDidLoad() {
         
         print(item)
+        
             itemLabel.text = "\(item)"
     }
     
