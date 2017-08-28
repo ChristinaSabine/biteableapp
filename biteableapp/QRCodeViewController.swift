@@ -53,7 +53,6 @@ class QRCodeViewController: UIViewController {
     }
 
     func lookUpCode(_ code: String) {
-    
         Alamofire.request("http://46.101.41.155/items/view/\(code).json").response { response in
             
             guard let data = response.data else {

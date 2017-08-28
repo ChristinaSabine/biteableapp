@@ -15,7 +15,7 @@ class Item: CustomStringConvertible {
     let barcode: String
     let vegetarian:String
     var description: String {
-        return "Item: \(name), \(barcode), \(vegetarian)"
+        return "Product Name: \(name), Barcode:\(barcode), Is it Vegetarian?: \(vegetarian)"
     }
     
     var imageURL: String {
