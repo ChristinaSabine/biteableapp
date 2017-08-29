@@ -8,7 +8,7 @@ class DisplayViewController: UIViewController {
     var item: Item!
     
     override func viewDidLoad() {
-        
+
         print(item)
         //Label data on item scanned
         itemLabel.text = "\(item!)"
