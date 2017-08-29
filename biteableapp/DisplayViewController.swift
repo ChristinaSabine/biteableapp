@@ -13,9 +13,7 @@ class DisplayViewController: UIViewController {
         
         print(item)
         
-        imageView.image = UIImage(imageURL!)
-        
-            itemLabel.text = "\(item)"
+            itemLabel.text = "\(item!)"
     }
     
     @IBAction func back(_ sender: Any) {
