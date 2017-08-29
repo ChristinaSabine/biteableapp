@@ -13,6 +13,7 @@ class QRCodeViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    //Barcode Scanner
     @IBAction func showScanner(_ sender: UIButton) {
         performSegue(withIdentifier: "Scanner", sender: self)
     }
@@ -36,9 +37,8 @@ class QRCodeViewController: UIViewController {
             print("not in database")
             return
         }
-        
+        //button display if item in database
         item = Item(json: jsonData["item"])
-        
         showButton.isEnabled = true
         showButton.isHidden = false
         

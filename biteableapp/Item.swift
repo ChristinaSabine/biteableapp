@@ -13,6 +13,7 @@ class Item: CustomStringConvertible {
     let seafoodfree: String
     let soyafree: String
     var description: String {
+        //what's Displayed in Label once scanned
         return "\(name)\n\n Vegetarian? - \(vegetarian)\n Vegan? - \(vegan)\n Gluten Free? - \(glutenfree)\n Lactose Free? - \(lactosefree)\n Nut Free? - \(nutfree)\n Seafood Free? - \(seafoodfree)\n Soya Free? - \(soyafree)\n\n Barcode - \(barcode)"
     }
     
