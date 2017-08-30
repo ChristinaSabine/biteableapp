@@ -79,7 +79,7 @@ class QRScannerController: UIViewController {
     @IBAction func back(_ sender: Any) {
         //DELETE THESE LINE
         hasScanned = true
-        delegate?.didScan(code: "7622210295149")
+        delegate?.didScan(code: "42247340")
         //HERE
         
         dismiss(animated: true, completion: nil)

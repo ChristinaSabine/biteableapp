@@ -18,7 +18,7 @@ class Item: CustomStringConvertible {
     }
         //what's Displayed in Image once scanned
     var imageURL: String {
-        return "http://46.101.41.155/img/\(barcode).jpg"
+        return "http://46.101.41.155/img/\(barcode).png"
     }
     
     init(json: JSON) {
