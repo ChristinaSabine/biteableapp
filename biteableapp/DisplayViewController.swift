@@ -12,7 +12,7 @@ class DisplayViewController: UIViewController {
         print(item)
         //Label data on item scanned
         itemLabel.text = "\(item!)"
-        imageView.imageFromServerURL(urlString:"\(item!)")
+        imageView.imageFromServerURL(urlString: item.imageURL)
         
     }
     
