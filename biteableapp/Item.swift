@@ -17,7 +17,7 @@ class Item: CustomStringConvertible {
         return "\(name)\n\n Vegetarian? - \(vegetarian)\n Vegan? - \(vegan)\n Gluten Free? - \(glutenfree)\n Lactose Free? - \(lactosefree)\n Nut Free? - \(nutfree)\n Seafood Free? - \(seafoodfree)\n Soya Free? - \(soyafree)\n\n Barcode - \(barcode)"
     }
         //what's Displayed in Image once scanned
-    var imageURL: String {
+    var imageURL: String! {
         return "http://46.101.41.155/img/\(barcode).png"
     }
     
