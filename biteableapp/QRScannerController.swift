@@ -78,8 +78,8 @@ class QRScannerController: UIViewController {
     
     @IBAction func back(_ sender: Any) {
         //UNCOMMENT to use in Simulator
-        //hasScanned = true
-        // delegate?.didScan(code: "42247340")
+        hasScanned = true
+        delegate?.didScan(code: "42247340")
         
         dismiss(animated: true, completion: nil)
     }
